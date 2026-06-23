@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku | Viva Conectado</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jogo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body data-jogo="sudoku">
+  <div id="header"></div>
+  <div id="navbar"></div>
+
+  <main class="jogo-container">
+    <section class="jogo-painel">
+      <h1 class="titulo">Sudoku</h1>
+      <p>Complete o tabuleiro 6x6 usando números de 1 a 6 sem repetir na linha, coluna ou bloco.</p>
+      <div id="areaJogo"></div>
+      <div class="jogo-acoes">
+        <button class="btn-jogar" id="salvarPontuacao" type="button">Salvar pontuação</button>
+        <a href="Jogos.html"><button class="btn-jogar" type="button">Voltar aos jogos</button></a>
+      </div>
+      <p class="jogo-mensagem" id="mensagemJogo" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script type="module" src="js/componentes.js"></script>
+  <script type="module" src="js/auth-ui.js"></script>
+  <script type="module" src="js/jogo-page.js?v=5"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+</html>

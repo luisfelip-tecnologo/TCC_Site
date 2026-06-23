@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redefinir Senha | Viva Conectado</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/redefinir-senha.css">
+  <link rel="stylesheet" href="css/acessibilidade.css?v=2">
+</head>
+
+<body>
+  <div class="auth-accessibilidade" aria-label="Controles de acessibilidade">
+    <button id="diminuir-fonte" class="btn-acessibilidade" type="button" aria-label="Diminuir fonte">A-</button>
+    <button id="aumentar-fonte" class="btn-acessibilidade" type="button" aria-label="Aumentar fonte">A+</button>
+    <button id="autocontraste" class="btn-acessibilidade" type="button">
+      <i class="bi bi-sun" aria-hidden="true"></i>
+      <span>Alto contraste</span>
+    </button>
+  </div>
+
+  <main class="auth-page">
+    <section class="redefinir-box auth-card" aria-labelledby="tituloRedefinir">
+      <img class="auth-logo" src="img/Logo_Preto.png" alt="Viva Conectado">
+
+      <h1 id="tituloRedefinir">Redefinir senha</h1>
+      <p class="auth-subtitulo">Crie uma nova senha segura para voltar a acessar sua conta.</p>
+
+      <p id="emailDestino" class="status-link" aria-live="polite">Validando link recebido...</p>
+
+      <form id="formRedefinir" novalidate>
+        <label for="novaSenha">Nova senha</label>
+        <div class="campo-form">
+          <i class="bi bi-lock" aria-hidden="true"></i>
+          <input type="password" id="novaSenha" placeholder="Digite a nova senha" autocomplete="new-password" required disabled>
+          <button class="btn-icone-senha" type="button" data-toggle-senha data-target="novaSenha" aria-label="Mostrar nova senha" disabled>
+            <i class="bi bi-eye" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <label for="confirmarSenha">Confirmar nova senha</label>
+        <div class="campo-form">
+          <i class="bi bi-shield-check" aria-hidden="true"></i>
+          <input type="password" id="confirmarSenha" placeholder="Confirme a nova senha" autocomplete="new-password" required disabled>
+          <button class="btn-icone-senha" type="button" data-toggle-senha data-target="confirmarSenha" aria-label="Mostrar confirmação de senha" disabled>
+            <i class="bi bi-eye" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <p class="senha-dicas">Use pelo menos 8 caracteres, uma letra maiúscula e um número.</p>
+
+        <button id="btnSalvarSenha" class="btn-salvar-senha" type="submit" disabled>Salvar nova senha</button>
+      </form>
+
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+      <p class="auth-link">Lembrou a senha? <a href="login.html">Entrar</a></p>
+    </section>
+  </main>
+
+  <script type="module" src="js/redefinir-senha.js?v=3"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+</html>

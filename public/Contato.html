@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Viva Conectado</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+
+  <main class="contato-page">
+    <section class="contato-hero">
+      <span class="section-pill"><i class="bi bi-chevron-down" aria-hidden="true"></i> Contato</span>
+      <h1>Como podemos ajudar?</h1>
+      <p>Envie dúvidas, sugestões ou pedidos de apoio sobre o Viva Conectado.</p>
+    </section>
+
+    <section class="contato-container">
+      <div class="contato-info">
+        <span>Atendimento</span>
+        <h2>Estamos aqui para ajudar</h2>
+        <p>O Viva Conectado promove inclusão digital com conteúdos acessíveis, jogos educativos e recursos para aprender com segurança.</p>
+
+        <div class="contato-canais">
+          <a href="mailto:vivaconectado@gmail.com">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span>vivaconectado@gmail.com</span>
+          </a>
+          <a href="https://wa.me/5518997254892" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp do projeto</span>
+          </a>
+          <span>
+            <i class="bi bi-clock" aria-hidden="true"></i>
+            <span>Retorno em até 2 dias úteis</span>
+          </span>
+        </div>
+      </div>
+
+      <form class="form-contato" id="formContato" novalidate>
+        <div class="campo-contato">
+          <label for="contatoNome">Nome</label>
+          <input type="text" id="contatoNome" name="nome" placeholder="Seu nome" autocomplete="name" maxlength="80" required>
+        </div>
+
+        <div class="campo-contato">
+          <label for="contatoEmail">E-mail</label>
+          <input type="email" id="contatoEmail" name="email" placeholder="Seu e-mail" autocomplete="email" maxlength="160" required>
+        </div>
+
+        <div class="campo-contato">
+          <label for="contatoAssunto">Assunto</label>
+          <input type="text" id="contatoAssunto" name="assunto" placeholder="Assunto" maxlength="120" required>
+        </div>
+
+        <div class="campo-contato">
+          <label for="contatoMensagem">Mensagem</label>
+          <textarea rows="5" id="contatoMensagem" name="mensagem" placeholder="Digite sua mensagem" minlength="10" maxlength="5000" required></textarea>
+        </div>
+
+        <div class="campo-oculto-contato" aria-hidden="true">
+          <label for="contatoWebsite">Se você é humano, deixe este campo vazio</label>
+          <input type="text" id="contatoWebsite" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit">
+          <span data-button-text>Enviar mensagem</span>
+          <i class="bi bi-send" aria-hidden="true"></i>
+        </button>
+        <p id="mensagemContato" class="mensagem-contato" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="js/componentes.js"></script>
+  <script type="module" src="js/auth-ui.js"></script>
+  <script type="module" src="js/contato.js"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+.jogos-page {
+  background: #f8fbff;
+}
+
+.jogos-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.95fr);
+  gap: 2rem;
+  align-items: center;
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem;
+  background: linear-gradient(135deg, #f8fbff, #eaf3ff);
+}
+
+.jogos-hero h1 {
+  margin-top: 1.2rem;
+  color: var(--texto);
+  font-size: 3.8rem;
+  line-height: 1.08;
+}
+
+.jogos-hero p {
+  max-width: 34rem;
+  margin-top: 1rem;
+  color: var(--texto-suave);
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.jogos-hero img {
+  width: 100%;
+  height: 27rem;
+  object-fit: cover;
+  border-radius: 50% 0 0 50%;
+  box-shadow: 0 26px 60px rgba(8, 18, 47, 0.18);
+}
+
+.jogos-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.jogos-hero-stats span {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.6rem;
+  align-items: center;
+  color: var(--texto-suave);
+}
+
+.jogos-hero-stats i {
+  grid-row: span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.85rem;
+  background: var(--azul-600);
+  color: #ffffff;
+  font-size: 1.45rem;
+}
+
+.jogos-hero-stats strong {
+  color: var(--texto);
+  font-size: 1.45rem;
+}
+
+.jogos-section,
+.beneficios-jogos,
+.ranking-container {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 0;
+}
+
+.jogos-page .home-jogos-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.jogos-page .home-jogo-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  justify-items: stretch;
+  gap: 0.85rem;
+  padding: 1.45rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.85rem;
+  background: #ffffff;
+  text-align: left;
+  box-shadow: 0 16px 36px rgba(8, 18, 47, 0.08);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.jogos-page .home-jogo-card:hover {
+  transform: translateY(-4px);
+  border-color: #acc7f5;
+  box-shadow: var(--sombra-suave);
+}
+
+.jogos-page .home-jogo-card img {
+  width: 8.4rem;
+  height: 8.4rem;
+  object-fit: contain;
+  justify-self: center;
+  margin: 0 auto 0.2rem;
+}
+
+.jogos-page .home-jogo-card h3 {
+  margin: 0;
+  color: var(--texto);
+  font-size: 1.42rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.jogos-page .home-jogo-card p {
+  margin-top: 0;
+  color: var(--texto-suave);
+  line-height: 1.65;
+}
+
+.jogos-page .home-jogo-card > p:not(.resultado-jogo) {
+  min-height: 3rem;
+}
+
+.jogo-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 0.2rem 0 0.15rem;
+}
+
+.jogo-meta span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.5rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.55rem;
+  background: #f8fbff;
+  color: var(--texto-suave);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.jogo-meta i {
+  color: var(--azul-600);
+}
+
+.resultado-jogo {
+  display: grid;
+  gap: 0.35rem;
+  min-height: 2.8rem;
+  margin-top: 0.2rem;
+  color: var(--texto);
+  font-weight: 800;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.resultado-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding: 0.15rem 0;
+  line-height: 1.35;
+}
+
+.resultado-linha span {
+  color: var(--texto-suave);
+}
+
+.resultado-linha strong {
+  color: var(--azul-600);
+  white-space: nowrap;
+}
+
+.jogos-page .home-jogo-card .btn-jogar {
+  justify-self: center;
+  width: min(100%, 13.5rem);
+  margin-top: 0.3rem;
+  gap: 0.45rem;
+}
+
+.beneficios-jogos {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.beneficios-jogos > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.45rem 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid #c8daf9;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #edf5ff, #ffffff);
+}
+
+.beneficios-jogos > div > i {
+  grid-row: span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--azul-600);
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.beneficios-jogos h2 {
+  color: var(--texto);
+  font-size: 1.45rem;
+}
+
+.beneficios-jogos p {
+  color: var(--texto-suave);
+  line-height: 1.55;
+}
+
+.beneficios-jogos ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  background: #ffffff;
+  border: 1px solid var(--borda);
+  list-style: none;
+}
+
+.beneficios-jogos li {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  color: var(--texto-suave);
+  text-align: center;
+  font-weight: 800;
+}
+
+.beneficios-jogos li i {
+  color: var(--azul-600);
+  font-size: 1.8rem;
+}
+
+.ranking-lista {
+  display: grid;
+  gap: 0.65rem;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.9rem;
+  background: #ffffff;
+  box-shadow: 0 14px 30px rgba(8, 18, 47, 0.08);
+}
+
+.ranking-lista li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 0.65rem;
+  background: #f8fbff;
+  color: var(--texto);
+}
+
+.ranking-lista strong {
+  color: var(--azul-600);
+}
+
+@media (max-width: 72rem) {
+  .jogos-hero,
+  .beneficios-jogos {
+    grid-template-columns: 1fr;
+  }
+
+  .jogos-hero h1 {
+    font-size: 3rem;
+  }
+
+  .jogos-page .home-jogos-cards,
+  .beneficios-jogos ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 43rem) {
+  .jogos-hero {
+    padding: 2rem 1rem;
+  }
+
+  .jogos-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .jogos-hero img {
+    height: 18rem;
+    border-radius: 1rem;
+  }
+
+  .jogos-page .home-jogos-cards,
+  .beneficios-jogos ul,
+  .jogo-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .jogos-page .home-jogo-card {
+    padding: 1.35rem;
+  }
+
+  .ranking-lista li {
+    flex-direction: column;
+  }
+}

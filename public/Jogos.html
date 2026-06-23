@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos | Viva Conectado</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Jogos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+
+  <main class="jogos-page">
+    <section class="jogos-hero">
+      <div>
+        <span class="section-pill"><i class="bi bi-chevron-down" aria-hidden="true"></i> Jogos educativos</span>
+        <h1>Aprenda brincando!</h1>
+        <p>Atividades para estimular memória, raciocínio lógico e atenção com pontuação salva na sua conta.</p>
+        <div class="jogos-hero-stats">
+          <span><i class="bi bi-controller" aria-hidden="true"></i><strong>+20</strong> atividades</span>
+          <span><i class="bi bi-star-fill" aria-hidden="true"></i><strong>100%</strong> gratuito</span>
+        </div>
+      </div>
+      <img src="img/idosos.jpg" alt="Idosos usando computador">
+    </section>
+
+    <section class="jogos-section">
+      <div class="section-header centralizado">
+        <h2>Escolha um jogo</h2>
+        <p>Conclua atividades e registre sua pontuação para subir no ranking.</p>
+      </div>
+
+      <div class="home-jogos-cards">
+        <article class="home-jogo-card">
+          <img src="img/jogo_Memoria.png" alt="Jogo da Memória">
+          <h3>Jogo da Memória</h3>
+          <p>Encontre os pares e exercite sua memória visual.</p>
+          <div class="jogo-meta">
+            <span><i class="bi bi-clock" aria-hidden="true"></i> Memória</span>
+            <span><i class="bi bi-bar-chart" aria-hidden="true"></i> Fácil</span>
+          </div>
+          <a class="btn-jogar" href="Jogo_Memoria.html">Jogar e pontuar <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+          <p class="resultado-jogo" id="resultado-memoria"></p>
+        </article>
+
+        <article class="home-jogo-card">
+          <img src="img/Sudoku.png" alt="Sudoku">
+          <h3>Sudoku</h3>
+          <p>Complete os números e pratique raciocínio lógico.</p>
+          <div class="jogo-meta">
+            <span><i class="bi bi-people" aria-hidden="true"></i> Lógica</span>
+            <span><i class="bi bi-bar-chart" aria-hidden="true"></i> Médio</span>
+          </div>
+          <a class="btn-jogar" href="Sudoku.html">Jogar e pontuar <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+          <p class="resultado-jogo" id="resultado-sudoku"></p>
+        </article>
+
+        <article class="home-jogo-card">
+          <img src="img/Quebra_cabeça.png" alt="Quebra-Cabeça">
+          <h3>Quebra-Cabeça</h3>
+          <p>Organize a sequência correta e treine atenção.</p>
+          <div class="jogo-meta">
+            <span><i class="bi bi-clock" aria-hidden="true"></i> Atenção</span>
+            <span><i class="bi bi-bar-chart" aria-hidden="true"></i> Fácil</span>
+          </div>
+          <a class="btn-jogar" href="Quebra_cabeça.html">Jogar e pontuar <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+          <p class="resultado-jogo" id="resultado-quebraCabeca"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="beneficios-jogos">
+      <div>
+        <i class="bi bi-lightbulb" aria-hidden="true"></i>
+        <h2>Benefícios dos jogos</h2>
+        <p>Os jogos ajudam a melhorar concentração, memória, foco e confiança no uso de ferramentas digitais.</p>
+      </div>
+      <ul>
+        <li><i class="bi bi-cpu" aria-hidden="true"></i> Estimula o cérebro</li>
+        <li><i class="bi bi-bullseye" aria-hidden="true"></i> Melhora o foco</li>
+        <li><i class="bi bi-emoji-smile" aria-hidden="true"></i> Aumenta a autoestima</li>
+        <li><i class="bi bi-controller" aria-hidden="true"></i> Diversão garantida</li>
+      </ul>
+    </section>
+
+    <section class="ranking-container" aria-labelledby="tituloRanking">
+      <div class="section-header centralizado">
+        <h2 id="tituloRanking">Ranking Geral</h2>
+        <p>A tabela é atualizada automaticamente com os pontos salvos no Firebase.</p>
+      </div>
+      <ol id="rankingLista" class="ranking-lista">
+        <li>Carregando ranking...</li>
+      </ol>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="js/componentes.js"></script>
+  <script type="module" src="js/auth-ui.js"></script>
+  <script type="module" src="js/jogos.js?v=5"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+</html>

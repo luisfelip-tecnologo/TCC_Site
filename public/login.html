@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | Viva Conectado</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/acessibilidade.css?v=2">
+</head>
+
+<body>
+  <div class="auth-accessibilidade" aria-label="Controles de acessibilidade">
+    <button id="diminuir-fonte" class="btn-acessibilidade" type="button" aria-label="Diminuir fonte">A-</button>
+    <button id="aumentar-fonte" class="btn-acessibilidade" type="button" aria-label="Aumentar fonte">A+</button>
+    <button id="autocontraste" class="btn-acessibilidade" type="button">
+      <i class="bi bi-sun" aria-hidden="true"></i>
+      <span>Alto contraste</span>
+    </button>
+  </div>
+
+  <main class="auth-page">
+    <section class="login-box auth-card" aria-labelledby="tituloLogin">
+      <img class="auth-logo" src="img/Logo_Preto.png" alt="Viva Conectado">
+      <h1 id="tituloLogin">Acesse sua conta</h1>
+      <p class="auth-subtitulo">Entre para continuar aprendendo e se conectando.</p>
+
+      <div class="campo-form">
+        <i class="bi bi-envelope" aria-hidden="true"></i>
+        <input type="email" id="email" placeholder="Digite seu e-mail" autocomplete="email">
+      </div>
+
+      <div class="campo-form">
+        <i class="bi bi-lock" aria-hidden="true"></i>
+        <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="current-password">
+        <button class="btn-icone-senha" id="toggleSenha" type="button" aria-label="Mostrar senha">
+          <i class="bi bi-eye" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <button class="btn-login" id="btnLogin" type="button">Entrar</button>
+
+      <div class="divisor" aria-hidden="true"><span>ou</span></div>
+
+      <button class="btn-login btn-google" id="btnGoogle" type="button">
+        <span class="google-mark" aria-hidden="true">G</span>
+        <span>Entrar com Google</span>
+      </button>
+
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+      <div class="links">
+        <a href="Cadastro.html">Criar uma conta</a>
+        <a href="Esqueci.html">Esqueci minha senha</a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/login.js?v=3"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+</html>

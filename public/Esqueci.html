@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recuperar Senha | Viva Conectado</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/Esqueci.css">
+  <link rel="stylesheet" href="css/acessibilidade.css?v=2">
+</head>
+
+<body>
+  <div class="auth-accessibilidade" aria-label="Controles de acessibilidade">
+    <button id="diminuir-fonte" class="btn-acessibilidade" type="button" aria-label="Diminuir fonte">A-</button>
+    <button id="aumentar-fonte" class="btn-acessibilidade" type="button" aria-label="Aumentar fonte">A+</button>
+    <button id="autocontraste" class="btn-acessibilidade" type="button">
+      <i class="bi bi-sun" aria-hidden="true"></i>
+      <span>Alto contraste</span>
+    </button>
+  </div>
+
+  <main class="auth-page">
+    <section class="recuperar-container auth-card" aria-labelledby="tituloRecuperar">
+      <img class="auth-logo" src="img/Logo_Preto.png" alt="Viva Conectado">
+
+      <h1 id="tituloRecuperar">Esqueci minha senha</h1>
+      <p class="auth-subtitulo">Informe o e-mail cadastrado para receber um link seguro de recuperação.</p>
+
+      <form id="formRecuperar" novalidate>
+        <label for="email">E-mail</label>
+        <div class="campo-form">
+          <i class="bi bi-envelope" aria-hidden="true"></i>
+          <input type="email" id="email" placeholder="Digite seu e-mail" autocomplete="email" required>
+        </div>
+
+        <button class="btn-recuperar" type="submit">Enviar instruções</button>
+      </form>
+
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+      <div class="voltar">
+        <span>Já possui uma conta? <a href="login.html">Entrar</a></span>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/esqueci.js?v=3"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+</html>

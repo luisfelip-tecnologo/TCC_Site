@@ -1,0 +1,12 @@
+.sobre-conteudo {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px 10px 140px;
+}
+
+.caixa-conteudo {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  border-left: 6px solid #0f172a;
+}

@@ -1,0 +1,126 @@
+.btn-whatsapp {
+  position: fixed;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 16px 32px rgba(37, 211, 102, 0.28);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.btn-whatsapp i {
+  font-size: 1.7rem;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 20px 38px rgba(37, 211, 102, 0.34);
+}
+
+.site-footer {
+  width: 100%;
+  background:
+    radial-gradient(circle at 18% 0, rgba(37, 99, 235, 0.28), transparent 20rem),
+    linear-gradient(135deg, #031533 0%, #020816 100%);
+  color: #ffffff;
+  padding: 2rem 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  max-width: 82rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.9fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.footer-brand img {
+  width: 8rem;
+  margin-bottom: 0.9rem;
+}
+
+.footer-brand p,
+.footer-copy {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+}
+
+.footer-coluna {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.footer-coluna h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.footer-coluna a {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer-coluna a:hover {
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.footer-copy {
+  max-width: 82rem;
+  margin: 1.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 62rem) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 43rem) {
+  .site-footer {
+    padding-inline: 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-whatsapp {
+    width: 3rem;
+    height: 3rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}

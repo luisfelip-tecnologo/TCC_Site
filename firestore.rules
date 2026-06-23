@@ -1,0 +1,58 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function estaLogado() {
+      return request.auth != null;
+    }
+
+    function dono(userId) {
+      return estaLogado() && request.auth.uid == userId;
+    }
+
+    match /usuarios/{userId} {
+      allow create, read, update, delete: if dono(userId);
+
+      match /pontuacoes/{jogoId} {
+        allow read, write: if dono(userId);
+      }
+
+      match /aprendizado/{documento} {
+        allow read, write: if dono(userId);
+      }
+    }
+
+    match /ranking/{userId} {
+      allow read: if true;
+      allow create, update: if dono(userId)
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.keys().hasOnly([
+          'uid',
+          'nome',
+          'fotoURL',
+          'pontuacaoTotal',
+          'atualizadoEm'
+        ]);
+      allow delete: if dono(userId);
+    }
+
+    match /emailsCadastrados/{emailHash} {
+      allow get: if true;
+      allow list: if false;
+      allow create, update: if estaLogado()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.keys().hasOnly([
+          'uid',
+          'email',
+          'metodoSenha',
+          'metodoGoogle',
+          'emailVerificado',
+          'criadoEm',
+          'ultimoLoginEm',
+          'atualizadoEm'
+        ]);
+      allow delete: if estaLogado()
+        && resource.data.uid == request.auth.uid;
+    }
+  }
+}

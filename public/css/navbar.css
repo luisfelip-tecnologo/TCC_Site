@@ -1,0 +1,69 @@
+.site-nav {
+  background: linear-gradient(135deg, #031533 0%, #020816 100%);
+  border-bottom: 1px solid rgba(147, 197, 253, 0.18);
+}
+
+.nav-lista {
+  max-width: 82rem;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.3rem;
+  padding: 0.25rem 1rem 1.05rem;
+}
+
+.nav-lista a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.45rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: color 0.2s ease;
+}
+
+.nav-lista a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.45rem;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: var(--azul-500);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.22s ease;
+}
+
+.nav-lista a:hover,
+.nav-lista a.ativo {
+  color: #ffffff;
+}
+
+.nav-lista a:hover::after,
+.nav-lista a.ativo::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 43rem) {
+  .nav-lista {
+    justify-content: flex-start;
+    gap: 1.1rem;
+    overflow-x: auto;
+    padding: 0.2rem 1rem 0.9rem;
+    scrollbar-width: none;
+  }
+
+  .nav-lista::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-lista a {
+    white-space: nowrap;
+    font-size: 0.95rem;
+  }
+}

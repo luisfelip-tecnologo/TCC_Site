@@ -1,0 +1,456 @@
+.jogo-container {
+  max-width: 78rem;
+  margin: 2rem auto 6rem;
+  padding: 1rem 1.25rem;
+}
+
+.jogo-painel {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 100% 0, rgba(37, 99, 235, 0.13), transparent 18rem),
+    linear-gradient(135deg, #ffffff, #f7fbff);
+  border: 1px solid #c8daf9;
+  border-radius: 1rem;
+  padding: 2.2rem;
+  box-shadow: 0 24px 54px rgba(8, 18, 47, 0.12);
+  text-align: center;
+}
+
+.jogo-painel > p {
+  max-width: 42rem;
+  margin: 0.6rem auto 0;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.jogo-acoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.jogo-mensagem {
+  min-height: 1.5rem;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.jogo-pontuacao-info {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 28rem;
+  margin: 1.2rem auto 0;
+  padding: 1rem;
+  border: 1px solid #d7e5fb;
+  border-radius: 0.85rem;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 900;
+  box-shadow: 0 12px 26px rgba(8, 18, 47, 0.06);
+}
+
+.pontuacao-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  line-height: 1.35;
+}
+
+.pontuacao-linha span {
+  color: #475569;
+}
+
+.pontuacao-linha strong {
+  color: #155dfc;
+  text-align: right;
+}
+
+.jogo-status,
+.memoria-status {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.6rem auto 1.1rem;
+}
+
+.jogo-status span,
+.memoria-status span {
+  display: grid;
+  gap: 0.15rem;
+  min-height: 4rem;
+  padding: 0.75rem;
+  border: 1px solid #d7e5fb;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  color: #475569;
+  font-size: 0.86rem;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(8, 18, 47, 0.06);
+}
+
+.jogo-status strong,
+.memoria-status strong {
+  color: #155dfc;
+  font-size: 1.3rem;
+}
+
+.jogo-ajuda {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  max-width: 48rem;
+  margin: 0.2rem auto 1.2rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d7e5fb;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  color: #334155;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.jogo-ajuda i {
+  color: #155dfc;
+  font-size: 1.1rem;
+}
+
+.memoria-grade {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(6.9rem, 1fr));
+  gap: 0.95rem;
+  max-width: 68rem;
+  margin: 1.2rem auto 0;
+}
+
+.memoria-carta {
+  aspect-ratio: 1;
+  min-height: 6.9rem;
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 0.9rem;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(96, 165, 250, 0.34), transparent 2.4rem),
+    linear-gradient(135deg, #061633, #020816);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 16px 30px rgba(2, 8, 22, 0.16);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, border-color 0.22s ease;
+}
+
+.memoria-carta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 38px rgba(2, 8, 22, 0.22);
+}
+
+.memoria-carta-conteudo {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.65rem;
+}
+
+.memoria-carta-conteudo i {
+  font-size: 1.65rem;
+}
+
+.memoria-carta-conteudo strong {
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.memoria-verso strong {
+  font-size: 2rem;
+}
+
+.memoria-carta.virada,
+.memoria-carta.encontrada {
+  background: linear-gradient(135deg, #155dfc, #0b4ce3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-0.15rem);
+}
+
+.memoria-carta.encontrada {
+  background: linear-gradient(135deg, #15803d, #22c55e);
+  cursor: default;
+}
+
+.memoria-carta.memoria-bonus.encontrada {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+}
+
+.memoria-carta.incorreta {
+  background: linear-gradient(135deg, #991b1b, #ef4444);
+  animation: memoriaErro 0.28s ease;
+}
+
+.sudoku-grade {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(3.9rem, 4.9rem));
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 1px solid #d7e5fb;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #ffffff, #f3f8ff);
+  box-shadow: 0 18px 36px rgba(8, 18, 47, 0.08);
+}
+
+.sudoku-grade input,
+.sudoku-grade span {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 0.7rem;
+  border: 1px solid #cbd5e1;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.sudoku-grade input {
+  background: #ffffff;
+  outline: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.sudoku-grade input:focus {
+  border-color: #155dfc;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14);
+}
+
+.sudoku-grade span {
+  background: #e7f0ff;
+  color: #155dfc;
+}
+
+.sudoku-grade input.correto {
+  border-color: #22c55e;
+  background: #ecfdf5;
+  color: #166534;
+}
+
+.sudoku-grade input.incorreto {
+  border-color: #ef4444;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.sudoku-grade input.vazio {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.sequencia-lista {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.5rem auto;
+  max-width: 52rem;
+}
+
+.sequencia-item {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid #d7e5fb;
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem;
+  text-align: left;
+  box-shadow: 0 12px 26px rgba(8, 18, 47, 0.06);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.sequencia-item:hover {
+  transform: translateY(-1px);
+  border-color: #b8cef4;
+}
+
+.sequencia-item > i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.55rem;
+  height: 2.55rem;
+  border-radius: 0.75rem;
+  background: #e7f0ff;
+  color: #155dfc;
+  font-size: 1.2rem;
+}
+
+.sequencia-ordem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: #155dfc;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.sequencia-texto {
+  color: #0f172a;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.sequencia-controles {
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.sequencia-controles button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sequencia-controles button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.sequencia-item.correto {
+  border-color: #22c55e;
+  background: #ecfdf5;
+}
+
+.sequencia-item.incorreto {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+@keyframes memoriaErro {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  35% {
+    transform: translateX(-0.3rem);
+  }
+
+  70% {
+    transform: translateX(0.3rem);
+  }
+}
+
+@media (max-width: 60rem) {
+  .jogo-container {
+    padding: 0.9rem;
+  }
+
+  .jogo-painel {
+    padding: 1.5rem;
+  }
+
+  .jogo-status,
+  .memoria-status {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .memoria-grade {
+    grid-template-columns: repeat(5, minmax(4.9rem, 1fr));
+    gap: 0.65rem;
+  }
+
+  .memoria-carta {
+    min-height: 4.9rem;
+    border-radius: 0.75rem;
+    font-size: 0.78rem;
+  }
+
+  .memoria-carta-conteudo i {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .jogo-painel {
+    padding: 1rem;
+  }
+
+  .jogo-status,
+  .memoria-status {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .memoria-grade {
+    grid-template-columns: repeat(5, minmax(3.2rem, 1fr));
+    gap: 0.42rem;
+  }
+
+  .memoria-carta {
+    min-height: 3.6rem;
+    border-radius: 0.58rem;
+    font-size: 0.62rem;
+  }
+
+  .memoria-carta-conteudo {
+    gap: 0.2rem;
+    padding: 0.35rem 0.2rem;
+  }
+
+  .memoria-carta-conteudo i {
+    font-size: 1rem;
+  }
+
+  .memoria-verso strong {
+    font-size: 1.35rem;
+  }
+
+  .sudoku-grade {
+    grid-template-columns: repeat(6, minmax(2.5rem, 1fr));
+    gap: 0.28rem;
+    padding: 0.55rem;
+  }
+
+  .sudoku-grade input,
+  .sudoku-grade span {
+    min-width: 0;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .sequencia-item {
+    grid-template-columns: auto 1fr;
+    gap: 0.7rem;
+    padding: 0.8rem;
+  }
+
+  .sequencia-item > i {
+    display: none;
+  }
+
+  .sequencia-texto,
+  .sequencia-controles {
+    grid-column: 2;
+  }
+
+  .sequencia-controles {
+    justify-content: flex-start;
+  }
+}

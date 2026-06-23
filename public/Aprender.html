@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprender | Viva Conectado</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aprender.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="navbar"></div>
+
+  <main class="aprender-page">
+    <section class="aprender-hero">
+      <div>
+        <span class="section-pill"><i class="bi bi-chevron-down" aria-hidden="true"></i> Aprender</span>
+        <h1>Aprenda no seu ritmo, de onde estiver</h1>
+        <p>Conteúdos práticos para usar celular, internet, serviços digitais e redes sociais com mais segurança.</p>
+
+        <form class="aprender-busca" role="search">
+          <label class="sr-only" for="buscaConteudos">Buscar conteúdos</label>
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <input id="buscaConteudos" type="search" placeholder="Buscar por tema ou palavra-chave...">
+          <button type="submit">Buscar</button>
+        </form>
+        <p class="aprender-busca-status" id="resultadoBuscaConteudos" aria-live="polite"></p>
+
+        <div class="aprender-beneficios">
+          <span><i class="bi bi-image" aria-hidden="true"></i> 1 guia principal</span>
+          <span><i class="bi bi-image" aria-hidden="true"></i> Guias visuais</span>
+          <span><i class="bi bi-people" aria-hidden="true"></i> Linguagem acessível</span>
+          <span><i class="bi bi-shield-check" aria-hidden="true"></i> Conteúdo prático e seguro</span>
+        </div>
+      </div>
+
+      <div class="aprender-hero-imagem">
+        <img src="img/idosos.jpg" alt="Idosos aprendendo tecnologia">
+        <i class="bi bi-wifi" aria-hidden="true"></i>
+        <i class="bi bi-shield-lock" aria-hidden="true"></i>
+        <i class="bi bi-play-fill" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <section class="aprender-section">
+      <div class="section-header">
+        <h2>Navegue por categorias</h2>
+        <p>Escolha um tema, avance no seu ritmo e marque o que você já concluiu.</p>
+      </div>
+
+      <div class="categorias-grid">
+        <a href="#como-nao-cair-em-golpes" class="categoria-card ativo"><i class="bi bi-grid-fill" aria-hidden="true"></i><span>Visão geral</span><small>Comece por aqui</small></a>
+        <a href="#como-nao-cair-em-golpes" class="categoria-card"><i class="bi bi-image-fill" aria-hidden="true"></i><span>Destaque principal</span><small>1 guia central</small></a>
+        <a href="#primeiros-passos" class="categoria-card"><i class="bi bi-image-fill" aria-hidden="true"></i><span>Guias visuais</span><small>Cards com imagens</small></a>
+        <a href="#servicos-online" class="categoria-card"><i class="bi bi-bank" aria-hidden="true"></i><span>Passo a passo</span><small>Explicações simples</small></a>
+        <a href="#redes-sociais" class="categoria-card"><i class="bi bi-youtube" aria-hidden="true"></i><span>YouTube e apoio</span><small>Materiais complementares</small></a>
+      </div>
+    </section>
+
+    <section class="aprender-section progresso-section">
+      <section class="resumo-progresso-videos" id="resumoProgresso" aria-live="polite"></section>
+    </section>
+
+    <section class="aprender-destaque" id="como-nao-cair-em-golpes">
+      <div class="destaque-texto">
+        <span>Guia principal</span>
+        <h2>Como Não Cair em Golpes</h2>
+        <p>Aprenda a reconhecer sinais de fraude, desconfiar de mensagens suspeitas e proteger seus dados antes de clicar em links ou informar senhas.</p>
+        <ul>
+          <li>Desconfie de mensagens com urgência, prêmios ou pedidos de senha.</li>
+          <li>Confira links, remetentes e canais oficiais antes de informar dados.</li>
+          <li>Use este guia como ponto de partida para navegar com mais segurança.</li>
+        </ul>
+      </div>
+
+      <article class="card-video card-video-destaque card-video-principal">
+        <div class="video-embed destaque-video">
+          <iframe src="https://www.youtube.com/embed/Tz7uQI32_d4" title="Como Não Cair em Golpes Digitais" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <h3>Como Não Cair em Golpes Digitais</h3>
+        <p>Assista ao vídeo com orientações simples para reconhecer golpes digitais e proteger seus dados.</p>
+      </article>
+    </section>
+
+    <section class="aprender-section" id="primeiros-passos">
+      <div class="section-header">
+        <h2>Guias visuais essenciais</h2>
+        <p>Aprenda o básico com imagens, explicações curtas e exemplos fáceis de seguir.</p>
+      </div>
+
+      <div class="cards-video-container">
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-primeiros-passos.svg" alt="Guia visual Primeiros passos no celular" loading="lazy">
+            <span class="youtube-thumb-title">Primeiros passos no celular</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Primeiros passos no celular</h3>
+          <p>Conheça os botões principais, a tela inicial e o que fazer quando algo sumir da tela.</p>
+        </article>
+
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-camera.jpeg" alt="Guia visual sobre câmera e fotos no celular" loading="lazy">
+            <span class="youtube-thumb-title">Câmera e fotos no celular</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Câmera e fotos no celular</h3>
+          <p>Entenda cada botão com imagem ampliada, legenda objetiva e um exemplo prático.</p>
+        </article>
+
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-internet.jpeg" alt="Guia visual sobre como usar a internet com segurança" loading="lazy">
+            <span class="youtube-thumb-title">Usando a internet</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Usando a internet</h3>
+          <p>Veja como abrir o navegador, pesquisar e identificar sinais básicos de segurança.</p>
+        </article>
+
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-gmail.jpg" alt="Guia visual sobre como criar um e-mail" loading="lazy">
+            <span class="youtube-thumb-title">Criando um e-mail</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Criando um e-mail</h3>
+          <p>Organize em etapas curtas: criar conta, entrar, enviar mensagem e reconhecer anexos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="aprender-section" id="servicos-online">
+      <div class="section-header">
+        <h2>Passo a passo do dia a dia</h2>
+        <p>Veja como acessar serviços importantes com mais autonomia e segurança.</p>
+      </div>
+
+      <div class="cards-video-container">
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-gov.jpg" alt="Guia visual sobre como acessar o Gov.br" loading="lazy">
+            <span class="youtube-thumb-title">Como acessar o Gov.br</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Como acessar o Gov.br</h3>
+          <p>Aprenda onde entrar no aplicativo, quais dados são necessários e quais cuidados tomar antes de informar CPF e senha.</p>
+        </article>
+
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-banco.jpg" alt="Guia visual sobre aplicativos de banco" loading="lazy">
+            <span class="youtube-thumb-title">Aplicativos de banco</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Aplicativos de banco</h3>
+          <p>Entenda onde ver saldo, pagar contas e quais alertas devem chamar atenção.</p>
+        </article>
+
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-maps.jpeg" alt="Guia visual sobre como usar o Google Maps" loading="lazy">
+            <span class="youtube-thumb-title">Como usar o Google Maps</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Como usar o Google Maps</h3>
+          <p>Aprenda a pesquisar endereços, criar rotas e conferir sua localização atual.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="aprender-section" id="redes-sociais">
+      <div class="section-header">
+        <h2>Comunicação, redes sociais e vídeos</h2>
+        <p>Use redes sociais e aplicativos de mensagens com mais clareza, privacidade e segurança.</p>
+      </div>
+
+      <div class="cards-video-container">
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-whatsapp.jpg" alt="Guia visual sobre como usar o WhatsApp" loading="lazy">
+            <span class="youtube-thumb-title">Como usar o WhatsApp</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Como usar o WhatsApp</h3>
+          <p>Aprenda a enviar mensagens, áudios e fotos, além de reconhecer sinais de golpe.</p>
+        </article>
+
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-instagram.jpg" alt="Guia visual sobre como usar o Instagram" loading="lazy">
+            <span class="youtube-thumb-title">Dicas para usar o Instagram</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Dicas para usar o Instagram</h3>
+          <p>Veja o essencial para abrir o perfil, seguir pessoas e ajustar a privacidade.</p>
+        </article>
+
+        <article class="card-video">
+          <figure class="conteudo-thumb youtube-thumb">
+            <img src="img/aprender-youtube.jpg" alt="Guia visual sobre como assistir vídeos no YouTube" loading="lazy">
+            <span class="youtube-thumb-title">Como assistir vídeos no YouTube</span>
+            <span class="youtube-icon-overlay" aria-hidden="true"><i class="bi bi-youtube"></i></span>
+            <span class="youtube-thumb-label">Assista no <i class="bi bi-youtube" aria-hidden="true"></i> YouTube</span>
+          </figure>
+          <h3>Como assistir vídeos no YouTube</h3>
+          <p>Aprenda a pesquisar vídeos, ajustar o volume e escolher conteúdos confiáveis.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="js/componentes.js"></script>
+  <script type="module" src="js/auth-ui.js"></script>
+  <script type="module" src="js/aprender.js?v=2"></script>
+  <script type="module" src="js/progresso-videos.js"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+
+</html>

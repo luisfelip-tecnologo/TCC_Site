@@ -1,0 +1,93 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.contraste-alto {
+  background-color: #000000 !important;
+  background-image: none !important;
+  color: #ffff00 !important;
+}
+
+body.contraste-alto :where(
+  main,
+  section,
+  article,
+  aside,
+  header,
+  nav,
+  footer,
+  form,
+  div,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd
+) {
+  background: #000000 !important;
+  background-image: none !important;
+  border-color: #ffff00 !important;
+  box-shadow: none !important;
+}
+
+body.contraste-alto :where(h1, h2, h3, h4, h5, h6, p, li, span, label, small, strong, dt, dd) {
+  color: #ffff00 !important;
+  text-shadow: none !important;
+}
+
+body.contraste-alto a {
+  color: #00ffff !important;
+}
+
+body.contraste-alto :where(input, textarea, select) {
+  background: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+  box-shadow: none !important;
+}
+
+body.contraste-alto :where(input, textarea)::placeholder {
+  color: #ffff99 !important;
+}
+
+body.contraste-alto :where(button, .btn, .btn-jogar, .btn-hero, .login-acao, .cadastro-acao, .btn-video-concluir) {
+  background: #ffff00 !important;
+  background-image: none !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: none !important;
+}
+
+body.contraste-alto :where(button, .btn, .btn-jogar, .btn-hero, .login-acao, .cadastro-acao, .btn-video-concluir) * {
+  color: #000000 !important;
+}
+
+body.contraste-alto a.btn-hero,
+body.contraste-alto a.btn-jogar,
+body.contraste-alto a.login-acao,
+body.contraste-alto a.cadastro-acao,
+body.contraste-alto .home-card a,
+body.contraste-alto .section-header a {
+  color: #000000 !important;
+}
+
+body.contraste-alto :where(i, svg) {
+  color: currentColor !important;
+}
+
+body.contraste-alto :where(img, iframe, video) {
+  filter: none !important;
+}
+
+body.contraste-alto .dropdown-conteudo::before,
+body.contraste-alto .home-hero::before,
+body.contraste-alto .home-hero-imagem::before,
+body.contraste-alto::before,
+body.contraste-alto::after {
+  display: none !important;
+}

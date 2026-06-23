@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar Conta | Viva Conectado</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="stylesheet" href="css/acessibilidade.css?v=2">
+</head>
+
+<body>
+  <div class="auth-accessibilidade" aria-label="Controles de acessibilidade">
+    <button id="diminuir-fonte" class="btn-acessibilidade" type="button" aria-label="Diminuir fonte">A-</button>
+    <button id="aumentar-fonte" class="btn-acessibilidade" type="button" aria-label="Aumentar fonte">A+</button>
+    <button id="autocontraste" class="btn-acessibilidade" type="button">
+      <i class="bi bi-sun" aria-hidden="true"></i>
+      <span>Alto contraste</span>
+    </button>
+  </div>
+
+  <main class="auth-page">
+    <section class="cadastro-box auth-card" aria-labelledby="tituloCadastro">
+      <img class="auth-logo" src="img/Logo_Preto.png" alt="Viva Conectado">
+      <h1 id="tituloCadastro">Criar sua conta</h1>
+      <p class="auth-subtitulo">Cadastre-se para acompanhar seu progresso e acessar os recursos do Viva Conectado.</p>
+
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+      <div class="campo-form">
+        <i class="bi bi-person" aria-hidden="true"></i>
+        <input type="text" id="nome" placeholder="Digite seu nome" autocomplete="given-name">
+      </div>
+
+      <div class="campo-form">
+        <i class="bi bi-person-badge" aria-hidden="true"></i>
+        <input type="text" id="sobrenome" placeholder="Digite seu sobrenome" autocomplete="family-name">
+      </div>
+
+      <div class="campo-form">
+        <i class="bi bi-envelope" aria-hidden="true"></i>
+        <input type="email" id="email" placeholder="Digite seu e-mail" autocomplete="email">
+      </div>
+
+      <div class="campo-form">
+        <i class="bi bi-lock" aria-hidden="true"></i>
+        <input type="password" id="senha" placeholder="Crie uma senha" autocomplete="new-password">
+      </div>
+
+      <div class="campo-form">
+        <i class="bi bi-shield-check" aria-hidden="true"></i>
+        <input type="password" id="confirmar" placeholder="Confirme a senha" autocomplete="new-password">
+      </div>
+
+      <button id="btnCadastro" type="button">Criar Conta</button>
+
+      <p class="auth-link">Já tem conta? <a href="login.html">Entrar</a></p>
+    </section>
+  </main>
+
+  <script type="module" src="js/cadastro.js?v=4"></script>
+  <script src="main.js/Acessibilidade.js"></script>
+</body>
+</html>

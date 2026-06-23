@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Primeiros passos no celular</title>
+  <desc id="desc">Guia visual educativo sobre funcoes essenciais do celular.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5f9ff"/>
+      <stop offset="1" stop-color="#e8f2ff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" x2="1">
+      <stop offset="0" stop-color="#155dfc"/>
+      <stop offset="1" stop-color="#0b4ce3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#08204f" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1505" cy="-50" r="185" fill="#155dfc"/>
+  <circle cx="1450" cy="-30" r="150" fill="#8dbdff" opacity="0.55"/>
+  <path d="M0 760h300c60 0 88 52 60 102l-35 38H0z" fill="#ffffff" opacity="0.9"/>
+
+  <g opacity="0.35" fill="#155dfc">
+    <circle cx="22" cy="24" r="8"/><circle cx="70" cy="24" r="8"/><circle cx="118" cy="24" r="8"/><circle cx="166" cy="24" r="8"/>
+    <circle cx="22" cy="72" r="8"/><circle cx="70" cy="72" r="8"/><circle cx="118" cy="72" r="8"/><circle cx="166" cy="72" r="8"/>
+    <circle cx="22" cy="120" r="8"/><circle cx="70" cy="120" r="8"/><circle cx="118" cy="120" r="8"/><circle cx="166" cy="120" r="8"/>
+    <circle cx="22" cy="168" r="8"/><circle cx="70" cy="168" r="8"/><circle cx="118" cy="168" r="8"/><circle cx="166" cy="168" r="8"/>
+  </g>
+
+  <g transform="translate(95 238)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="900" fill="#08204f">PRIMEIROS</text>
+    <text x="0" y="118" font-family="Arial, Helvetica, sans-serif" font-size="120" font-weight="900" fill="#155dfc">PASSOS</text>
+    <rect x="0" y="145" width="440" height="84" rx="12" fill="url(#blue)"/>
+    <text x="28" y="206" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900" fill="#ffffff">NO CELULAR</text>
+    <rect x="0" y="302" width="118" height="8" rx="4" fill="#155dfc"/>
+    <rect x="132" y="302" width="92" height="8" rx="4" fill="#b8cff7"/>
+    <text x="0" y="378" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17345c">Aprenda o básico para</text>
+    <text x="0" y="426" font-family="Arial, Helvetica, sans-serif" font-size="35" fill="#17345c">usar seu celular com</text>
+    <text x="0" y="474" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="900" fill="#155dfc">confiança e facilidade.</text>
+  </g>
+
+  <g transform="translate(635 66)" filter="url(#shadow)">
+    <rect x="0" y="0" width="365" height="742" rx="60" fill="#10151f"/>
+    <rect x="18" y="18" width="329" height="706" rx="46" fill="#fbfdff"/>
+    <path d="M127 18h111c-3 27-18 40-56 40s-52-13-55-40z" fill="#10151f"/>
+    <text x="58" y="78" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#111827">10:30</text>
+
+    <g transform="translate(58 132)">
+      <rect width="120" height="120" rx="26" fill="#31c95d"/>
+      <path d="M38 37c16 36 28 48 55 56 7 2 14-3 16-10l3-13c1-5-1-10-6-12l-16-7c-4-2-8-1-11 2l-6 6c-11-7-19-15-25-26l6-6c3-3 4-8 2-12l-7-16c-2-5-7-7-12-6l-13 3c-7 2-12 9-10 16z" fill="#ffffff"/>
+      <text x="60" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#1f2937">Ligar</text>
+
+      <g transform="translate(158 0)">
+        <rect width="120" height="120" rx="26" fill="#2687f5"/>
+        <path d="M28 34h64c10 0 18 8 18 18v19c0 10-8 18-18 18H57L35 106V89h-7c-10 0-18-8-18-18V52c0-10 8-18 18-18z" fill="#ffffff"/>
+        <text x="60" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#1f2937">Mensagens</text>
+      </g>
+
+      <g transform="translate(0 205)">
+        <rect width="120" height="120" rx="26" fill="#f6a01a"/>
+        <circle cx="60" cy="46" r="23" fill="#ffffff"/>
+        <path d="M25 105c7-29 25-43 35-43s28 14 35 43z" fill="#ffffff"/>
+        <text x="60" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#1f2937">Contatos</text>
+      </g>
+
+      <g transform="translate(158 205)">
+        <rect width="120" height="120" rx="26" fill="#8a5cf6"/>
+        <path d="M33 43h17l8-12h28l8 12h13v53H33z" fill="#ffffff"/>
+        <circle cx="70" cy="70" r="20" fill="#8a5cf6"/>
+        <circle cx="70" cy="70" r="12" fill="#ffffff"/>
+        <text x="60" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#1f2937">Câmera</text>
+      </g>
+
+      <g transform="translate(0 410)">
+        <rect width="120" height="120" rx="26" fill="#16c9b7"/>
+        <circle cx="82" cy="42" r="12" fill="#ffffff"/>
+        <path d="M20 96l33-42 24 31 16-18 27 29z" fill="#ffffff"/>
+        <text x="60" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#1f2937">Fotos</text>
+      </g>
+
+      <g transform="translate(158 410)">
+        <rect width="120" height="120" rx="26" fill="#64748b"/>
+        <path d="M60 27l12 22 24 4-17 17 4 24-23-12-23 12 4-24-17-17 24-4z" fill="#ffffff"/>
+        <circle cx="60" cy="64" r="13" fill="#64748b"/>
+        <text x="60" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#1f2937">Ajustes</text>
+      </g>
+
+      <circle cx="132" cy="622" r="10" fill="#155dfc"/>
+      <circle cx="172" cy="622" r="10" fill="#cbd5e1"/>
+      <circle cx="212" cy="622" r="10" fill="#cbd5e1"/>
+    </g>
+  </g>
+
+  <g transform="translate(1118 180)">
+    <circle cx="0" cy="0" r="70" fill="#ffffff" filter="url(#shadow)"/>
+    <rect x="-19" y="-36" width="38" height="72" rx="8" fill="none" stroke="#155dfc" stroke-width="10"/>
+    <text x="118" y="-18" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" fill="#08204f">FUNÇÕES</text>
+    <text x="118" y="30" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" fill="#08204f">ESSENCIAIS</text>
+    <text x="118" y="82" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#475569">Conheça as principais</text>
+    <text x="118" y="122" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#475569">funções do seu celular.</text>
+    <rect x="118" y="184" width="290" height="4" rx="2" fill="#bfd4f3"/>
+  </g>
+
+  <g transform="translate(1118 455)">
+    <circle cx="0" cy="0" r="70" fill="#ffffff" filter="url(#shadow)"/>
+    <path d="M-30 8l20 20 40-48" fill="none" stroke="#155dfc" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="118" y="-12" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" fill="#08204f">PASSO A PASSO</text>
+    <text x="118" y="52" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#475569">Explicações simples</text>
+    <text x="118" y="92" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#475569">e fáceis de entender.</text>
+    <rect x="118" y="154" width="290" height="4" rx="2" fill="#bfd4f3"/>
+  </g>
+
+  <g transform="translate(1118 715)">
+    <circle cx="0" cy="0" r="70" fill="#ffffff" filter="url(#shadow)"/>
+    <path d="M0-42c40 16 48 18 48 18v38c0 45-48 69-48 69s-48-24-48-69v-38s8-2 48-18z" fill="none" stroke="#155dfc" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M-24 14l17 17 35-43" fill="none" stroke="#155dfc" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="118" y="-14" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" fill="#08204f">MAIS CONFIANÇA</text>
+    <text x="118" y="50" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#475569">Use seu celular com</text>
+    <text x="118" y="90" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#475569">segurança no dia a dia.</text>
+  </g>
+
+  <g transform="translate(78 780)">
+    <rect x="0" y="0" width="270" height="105" rx="24" fill="#ffffff" opacity="0.92" filter="url(#shadow)"/>
+    <text x="38" y="67" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#155dfc">VIVA</text>
+    <path d="M138 27c24-18 58-18 82 0" fill="none" stroke="#155dfc" stroke-width="8" stroke-linecap="round"/>
+    <path d="M155 47c14-10 34-10 48 0" fill="none" stroke="#155dfc" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="179" cy="65" r="7" fill="#155dfc"/>
+    <text x="38" y="92" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#08204f" letter-spacing="1">CONECTADO</text>
+  </g>
+</svg>

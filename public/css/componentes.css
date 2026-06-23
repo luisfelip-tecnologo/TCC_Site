@@ -1,0 +1,28 @@
+.caixa-conteudo {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  border-left: 6px solid #0f172a;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  font-size: 1.125rem;
+  color: #333;
+}
+
+.caixa-conteudo p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.caixa-conteudo ul {
+  margin-top: 25px;
+  padding-left: 22px;
+}
+
+.caixa-conteudo li {
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.caixa-conteudo li strong {
+  color: #0f172a;
+}
